@@ -1,3 +1,7 @@
+
+//виводити thankyou massage і закривати форму після вдалого відправлення повідомлення
+on_sent_ok:  $('.formTitle+p').css('display', 'none');setTimeout(function(){ $.fancybox.close(); }, 1500);
+
 //Закривати popup після відправки форми (вставляємо в форму additional setting)
 on_sent_ok: $.fancybox.close();
 
