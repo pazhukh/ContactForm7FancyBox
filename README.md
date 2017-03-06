@@ -1,3 +1,6 @@
+//виводити thank you massage and close and clear form after 1.5seconds
+on_sent_ok:  $('.formTitle+p').css('display', 'none');setTimeout(function(){ $.fancybox.close(); }, 1500);setTimeout(function(){ $('.formTitle+p').css('display', 'block'); }, 2000);setTimeout(function(){ $('.wpcf7-mail-sent-ok').css('display', 'none'); }, 2000);
+
 
 //виводити thankyou massage і закривати форму після вдалого відправлення повідомлення
 on_sent_ok:  $('.formTitle+p').css('display', 'none');setTimeout(function(){ $.fancybox.close(); }, 1500);
