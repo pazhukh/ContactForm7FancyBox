@@ -15,6 +15,11 @@ on_sent_ok: $.fancybox.close();
   <div id="contact_form_pop">[contact-form-7 id="76" title="Send email"]</div>
 </div>
 
+//невиводимо thank you message
+.wpcf7-mail-sent-ok{
+	display: none!important;
+}
+
 //видалити атрибут, який блокує перевірки на required
 $('.wpcf7-form').removeAttr('novalidate');
 
